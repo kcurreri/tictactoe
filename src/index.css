@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans');
+body {
+    font: 14px 'Gloria Hallelujah', 'Century Gothic', Futura, sans-serif;
+    margin: 20px;
+}
+
+.board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.status {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 74px;
+    font-family: 'Gloria Hallelujah';
+    line-height: 100px;
+    height: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+}
+.square.green {
+    background: #0f0;
+    color: #fff;
+}
+.square.gray {
+    background: #aaa;
+    color: #ccc;
+}
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px auto;
+}
+.game-board {
+    margin: 0px auto;
+}
+button {
+    font-family: 'Gloria Hallelujah';
+}
+.history-order-toggle {
+    cursor: pointer;
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+}
+.history-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.history-buttons.reverse {
+    flex-direction: column-reverse;
+}
+.history-button {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 2px;
+    margin: 3px 0;
+}
+.history-button.bold {
+    font-weight: bold;
+    border: 1px solid #000;
+}
